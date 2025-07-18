@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DHABA KA JALWA </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .contanier {
+
+
+            width: 100vw;
+            height: 100vh;
+            overflow-x: none;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+
+
+        }
+
+        .navcontanier {
+            width: 100vw;
+            /* background-color: rgb(248, 219, 146);
+             */
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            ;
+            min-height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+        }
+
+        nav {
+            width: 100%;
+            overflow-x: none;
+        }
+
+        #navlist {
+
+            width: 100%;
+            padding: 10px;
+            list-style: none;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(37, 23, 23);
+        }
+
+        #navlogo {
+            font-size: 2rem;
+            color: black;
+
+        }
+
+        #navitem {
+            padding: 5px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer {
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            text-align: center;
+            min-height: 25px;
+            ;
+        }
+
+        .footer p {
+            color: rgb(86, 53, 53);
+            font-size: 1.5rem;
+        }
+
+        .contantbox {
+            width: 60%;
+            margin: auto;
+            /* border: 1px solid black; */
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            /* padding: 10px; */
+            padding: 1px;
+            margin: auto;
+            box-shadow: 1px 1px 30px black;
+
+        }
+
+        .item {
+            padding: 25px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .rightbox {
+            position: relative;
+            overflow: hidden;
+            transform: all 0.3s linear 0s;
+
+        }
+
+        .rightbox img {
+            height: 200px;
+            border-radius: 20px;
+            /* transform: ; */
+            transition: all 0.5s linear 0s;
+
+        }
+
+        .rightbox :hover {
+            transform: scale(1.2);
+
+        }
+
+        .leftbox {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .leftbox h2 {
+            font-size: 1.7rem;
+        }
+
+        .ingbox {
+            font-size: 1rem;
+
+        }
+
+        .recbox {
+            font-size: 1rem;
+
+        }
+
+        .rightbox .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            background-color: rgba(67, 60, 60, 0.67);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.3s linear 0s;
+
+
+        }
+
+        .rightbox:hover .overlay {
+            opacity: 1;
+        }
+
+        .rightbox,
+        .overlay span {
+            color: white;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+
+        <header>
+            <div class="navcontanier">
+                <nav>
+                    <ul id="navlist">
+                        <li>
+                            <p id="navlogo"> DHABA KA JALWA</p>
+
+                        </li>
+                        <li>
+                            <div id="navitem">
+                                <a href="#">Home</a>
+                                <a href="#">Contact</a>
+                                <a href="#">About</a>
+
+
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </header>
+
+        <main>
+            <div class="contantbox">
+                <!-- item1 -->
+                <section>
+                    <div class="item">
+                        <div class="leftbox">
+                            <!-- <img src="istockphoto-521802535-612x612.jpg" alt=""> -->
+                            <!-- heaDING -->
+                            <h2> Barfi Jamun </h2>
+                            <h2> ingredient</h2>
+                            <div>
+                                <ul class="ingbox">
+                                    <li>Sugar</li>
+                                    <li>Bread</li>
+                                    <li>Oil</li>
+                                </ul>
+
+                            </div>
+
+                            <h2> Recipe </h2>
+                            <div>
+                                <ol class="recbox">
+                                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ipsum ut tempora
+                                        autem explicabo odio atque deserunt ad praesentium porro dicta animi maxime
+                                        ducimus quam, nihil, rem necessitatibus fugiat hic.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                </ol>
+                                
+                            </div>
+
+                        </div>
+                        <div class="rightbox">
+                            <img src="barfi-photo-sweet-table_1036998-302509.avif" alt="">
+                            <div class="overlay">
+                                <span> CLICK HERE TO BUY </span>
+                            </div>
+                            <!-- <img src="istockphoto-521802535-612x612.jpg" alt=""> -->
+
+
+                        </div>
+                    </div>
+                </section>
+                <!-- item2 -->
+                <section>
+                    <div class="item">
+                        <div class="leftbox">
+                            <!-- heaDING -->
+                            <h2> Gulab Jamun </h2>
+                            <h2> ingredient</h2>
+                            <div>
+                                <ul>
+                                    <li>Sugar</li>
+                                    <li>Bread</li>
+                                    <li>Oil</li>
+                                </ul>
+
+                            </div>
+
+                            <h2> Recipe </h2>
+                            <div>
+                                <ol>
+                                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ipsum ut tempora
+                                        autem explicabo odio atque deserunt ad praesentium porro dicta animi maxime
+                                        ducimus quam, nihil, rem necessitatibus fugiat hic.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                        <div class="rightbox">
+                            <img src="istockphoto-521802535-612x612.jpg" alt="">
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer">
+                <p>
+                    copyright &copy; DHABA KA JALWA Pvt Ltd 2023 all rights reseverd
+
+                </p>
+                <!-- copyright &copy; DHABA KA JALWA Pvt Ltd 2023 all rights reseverd  -->
+            </div>
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
